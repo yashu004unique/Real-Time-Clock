@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 350px;
+    height: 350px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+.clock-hour{
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    /* border: 1px solid red; */
+    
+}
+
+.hr-12{
+    top: 0px;
+    left: 145px;
+}
+.hr-6{
+    bottom: 0px;
+    left: 145px;
+}
+
+.hr-3{
+    top: 155px;
+    right:-5px;
+}
+.hr-9{
+    top: 155px;
+    left: -5px;
+}
+
+.hr-1{
+    top: 20px;
+    right: 70px;
+}
+
+.hr-2{
+    top: 80px;
+    right: 15px;
+}
+
+.hr-5{
+    bottom: 20px;
+    right: 70px;
+}
+
+.hr-4{
+    bottom: 80px;
+    right: 15px;
+}
+.hr-8{
+    bottom: 80px;
+    left: 15px;
+}
+.hr-7{
+    bottom: 20px;
+    left: 70px;
+}
+.hr-11{
+    top: 20px;
+    left: 70px;
+}
+.hr-10{
+    top: 80px;
+    left: 15px;
+}
+
+.hour-hand, .minute-hand, .second-hand{
+    width: 20px;
+    height: 20px;    
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hour-hand span{
+    width: 18px;
+    height: 95px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 1px;
+    border-radius: 60% 60% 0 0;
+}
+
+.minute-hand span{
+    width: 14px;
+    height: 125px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: -125px;
+    left:2px;
+    border-radius: 70% 70% 0 0;
+}
+
+.second-hand span{
+    width: 10px;
+    height: 135px;
+    background: red;
+    display: block;
+    position: absolute;
+    top: -135px;
+    left: 4px;
+    border-radius: 80% 80% 0 0;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
